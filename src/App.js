@@ -9,6 +9,20 @@ function App() {
   return (
     <>
       <Grid container spacing={3}>
+        <Grid item xs={3}>
+          <h1>User Name</h1>
+        </Grid>
+        <Grid item xs={3}>
+          <h1>Tank</h1>
+        </Grid>
+        <Grid item xs={3}>
+          <h1>DPS</h1>
+        </Grid>
+        <Grid item xs={3}>
+          <h1>Support</h1>
+        </Grid>
+      </Grid>
+      <Grid container spacing={3}>
         {
           Array.from({ length: numberOfPlayers }).map((_, index) => (
             <Grid item xs={12}>
